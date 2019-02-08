@@ -1,0 +1,85 @@
+
+.tab:hover {
+	opacity: 1
+}
+.dial_number{
+	font-size: 30px; 
+	width: 80px;
+	height: 50px;
+	border-radius: 8px;
+	background-color: #EDE7F6;
+
+	
+}
+#content {
+	padding-left: 50px;
+}
+
+.tab{
+	 background-color: #5E35B1; 
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 8px;
+  font-size: 20px;
+
+}
+ 
+ .dial_number:active {
+  background-color: #4527A0;
+  box-shadow: 0 5px #666;
+  transform: translateY(2px);
+}
+
+.dialer_pad{
+	padding-bottom: 5px;
+	padding-right: 50px;
+	margin-left: 25px;
+}
+
+.commandButton{
+	font-size: 25px;
+	padding: 10px;
+	border-radius: 8px;
+	background: green;
+	background-color: #D1C4E9;
+	margin-left: 25px;
+}
+.commandButton:active{
+	 background-color: #4527A0;
+  box-shadow: 0 5px #666;
+  transform: translateY(2px);
+}
+
+#input_dialer{
+	width: 300px;
+	height: 40px;
+}
+
+.contact{
+	font-size: 20px; 
+	border-radius: 8px;
+	background-color: #EDE7F6;
+	padding: 10px;
+}
+
+.contact:active{
+	background-color: #4527A0;
+  box-shadow: 0 5px #666;
+  transform: translateY(2px);
+}
+
+.addContact{
+	width:400px;
+	font-size: 20px;
+}
+
+label{
+	font-size: 25px;
+}
+

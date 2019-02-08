@@ -1,0 +1,223 @@
+<html>
+	<head>
+		<title>Dialer</title>
+		<link rel="stylesheet" href="phone.css">
+	</head>
+	<body>
+		<div id="tab_bar" role="navigation">
+			<button id="dialer" class="tab" accesskey="d">Dialer</button>
+			<button id="list" class="tab" accesskey="c">Contact List</button>
+			<button id="new" class="tab" accesskey="a">Add Contact</button>
+			<button id="help" class="tab" accesskey="h">Help</button>
+		</div>
+		<div id="content" role="main">
+			<div id="content_dialer">
+				<h1>Dialer</h1>
+				<input id="input_dialer" aria-live="polite">
+				<br>
+				<br>
+				<div id="dialer_pad">
+					<table>
+						<tr>
+							<td><button class="dial_number" accesskey="1">1</button></td>
+							<td><button  class="dial_number" accesskey="2">2</button></td>
+							<td><button class="dial_number" accesskey="3">3</button></td>
+						</tr>
+						<tr>
+							<td><button class="dial_number" accesskey="4">4</button></td>
+							<td><button class="dial_number" accesskey="5">5</button></td>
+							<td><button class="dial_number" accesskey="6">6</button></td>
+						</tr>	
+						<tr>
+							<td><button class="dial_number" accesskey="7">7</button></td>
+							<td><button class="dial_number" accesskey="8">8</button></td>
+							<td><button class="dial_number" accesskey="9">9</button></td>
+						</tr>
+						<tr>
+							<td><button class="dial_number" accesskey="*">*</button></td>
+							<td><button class="dial_number" accesskey="0">0</button></td>
+							<td><button class="dial_number" accesskey="#">#</button></td>
+						</tr>	
+					</table>
+				</div>
+				<div class="row" id="commandForDialer"> 
+					<button id="button_dial" class="commandButton" accesskey="D">Dial</button>
+					<button id="button_dialer_clear" class="commandButton" accesskey="C">Clear</button>
+				</div>
+			</div>
+			<div id="content_list" aria-live="polite">
+				<h1>Contact List</h1>
+				<table>
+					<tr>
+						<th>Name</th>
+						<th>Phone Number</th>
+						<th>Email</th>
+					</tr>
+					<tr>
+						<td><button class="contact">Harry Potter</button></td>
+						<td>202-555-0131</td>
+						<td>harry.potter@hogwarts.edu</td>
+						<td><img src="hp.png" alt="Harry Potter contact photo"></td>
+					</tr>
+					<tr>
+						<td><button class="contact">Ron Weasley</button></td>
+						<td>518-555-0119</td>
+						<td>ron.weasley@hogwarts.edu</td>
+						<td><img src="rw.png" alt="Ron Weasley contact photo"></td>
+					</tr>	
+					<tr>
+						<td><button class="contact">Hermione Granger</button></td>
+						<td>410-555-0196</td>
+						<td>hermione.granger@hogwarts.edu</td>
+						<td><img src="hg.png" alt="Hermione Granger contact photo"></td>
+					</tr>
+					<tr>
+						<td><button class="contact">Albus Dumbledore</button></td>
+						<td>404-555-0115</td>
+						<td>albus.dumblerdore@hogwarts.edu</td>
+						<td><img src="ad.png" alt="Albus Dumbledore contact photo"></td>
+					</tr>
+					<tr>
+						<td><button class="contact">Draco Malfoy</button></td>
+						<td>207-555-0177</td>
+						<td>draco.malfoy@hogwarts.edu</td>
+						<td><img src="dm.png" alt="Draco Malfoy contact photo"></td>
+					</tr>
+					<tr>
+						<td><button class="contact">Severus Snape</button></td>
+						<td>512-555-0135</td>
+						<td>severus.snape@hogwarts.edu</td>
+						<td><img src="ss.jpg" alt="Severus Snape contact photo"></td>
+
+					</tr>
+					<tr>
+						<td><button class="contact">Luna Lovegood</button></td>
+						<td>225-555-0158</td>
+						<td>luna.lovegood@hogwarts.edu</td>
+						<td><img src="ll.png" alt="Luna Lovegood contact photo"></td>
+					</tr>
+					<tr>
+						<td><button class="contact">Neville Longbottom</button></td>
+						<td>701-555-0196</td>
+						<td>neville.longbottom@hogwarts.edu</td>
+						<td><img src="nl.png" alt="Neville Longbottom contact photo"></td>
+					</tr>
+					<tr>
+						<td><button class="contact">Ginny Weaseley</button></td>
+						<td>208-555-0193</td>
+						<td>ginny.weaseley@hogwarts.edu</td>
+						<td><img src="gw.png" alt="Ginny Weaseley contact photo"></td>
+					</tr>
+				</table>
+
+			</div>
+			<div id="content_new" aria-live="polite">
+				<h1>Add Contact</h1>
+				<form>
+					<label for="name">Name</label><br>
+					<input id="name" class="addContact" placeholder="Jane Smith">
+				</form>
+				<form>
+					<label for="number">Phone Number</label><br>
+					<input id="number" class="addContact"  placeholder="123-456-7890">
+				</form>
+				<form>
+					<label for="email">Email</label><br>
+					<input id="email" class="addContact"  placeholder="jane.smith@colorado.edu">
+				</form>
+
+				<button class= "commandButton" id="add_contact">Add Content</button>
+				<button class="commandButton id="clear">Clear</button>
+			</div>
+			<div id="content_help">
+				<h1>Help</h1>
+				<h2>Keyboard Shortcuts</h2>
+				<table>
+					<th>
+						Key
+					</th>
+					<th>
+						Action
+					</th>
+					<tr>
+						<td>"d"</td>
+						<td>Dialer tab</td>
+					</tr>
+					<tr>
+						<td>"c"</td>
+						<td>Contact List tab</td>
+					</tr>
+					<tr>
+						<td>"a"</td>
+						<td>Add Contact tab</td>
+					</tr>
+					<tr>
+						<td>"h"</td>
+						<td>help tab</td>
+					</tr>
+					<tr>
+						<td>"1"</td>
+						<td>1 in Dialer</td>
+					</tr>
+					<tr>
+						<td>"2"</td>
+						<td>2 in Dialer</td>
+					</tr>
+					<tr>
+						<td>"3"</td>
+						<td>3 in Dialer</td>
+					</tr>
+					<tr>
+						<td>"4"</td>
+						<td>4 in Dialer</td>
+					</tr>
+					<tr>
+						<td>"5"</td>
+						<td>5 in Dialer</td>
+					</tr>
+					<tr>
+						<td>"6"</td>
+						<td>6 in Dialer</td>
+					</tr>
+					<tr>
+						<td>"7"</td>
+						<td>7 in Dialer</td>
+					</tr>
+					<tr>
+						<td>"8"</td>
+						<td>8 in Dialer</td>
+					</tr>
+					<tr>
+						<td>"9"</td>
+						<td>9 in Dialer</td>
+					</tr>
+					<tr>
+						<td>"0"</td>
+						<td>0 in Dialer</td>
+					</tr>
+					<tr>
+						<td>"*"</td>
+						<td>* in Dialer</td>
+					</tr>
+					<tr>
+						<td>"#"</td>
+						<td># in Dialer</td>
+					</tr>
+					<tr>
+						<td>"D"</td>
+						<td>Dial button in Dialer</td>
+					</tr>
+					<tr>
+						<td>"C"</td>
+						<td>Clear button in Dialer</td>
+					</tr>
+				</table>
+				<h2>Photo Source</h2>
+				<a href="https://www.sporcle.com/games/minshkins/harry-potter-first-line-pic-click">Harry Potter Pictures</a>
+			</div>
+		</div>
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="phone.js"></script>
+	</body>
+</html>
